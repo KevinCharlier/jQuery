@@ -63,14 +63,20 @@
 				$('body').css('font-size', '80%')
 			})
 
-			/* mettre en gras ou remettre en normal les mots en vert */ //REMETTRE NORMAL ?????
+			/* mettre en gras ou remettre en normal les mots en vert */
 			$('ol li:nth-child(3)').click(function () {
 				$('.vert').addClass('gras')
 			})
+			$('ol li:nth-child(3)').dblclick(function () {
+				$('.vert').removeClass('gras')
+			})
 
-			/* souligner ou remettre en normal les mots en rouge */ //REMETTRE NORMAL ?????
+			/* souligner ou remettre en normal les mots en rouge */
 			$('ol li:nth-child(4)').click(function () {
 				$('.rouge').css('text-decoration', 'underline')
+			})
+			$('ol li:nth-child(4)').dblclick(function () {
+				$('.rouge').css('text-decoration', 'none')
 			})
 
 			/* remplacer le logo par une autre image au survol */
@@ -81,9 +87,9 @@
 				$('img').attr('src', 'jquery-logo.png')
 			})
 
-			/* Afficher l'URL des liens dans une infobulle lors du survol des liens */ // ?????
+			/* Afficher l'URL des liens dans une infobulle lors du survol des liens */ // ?????????????
 			$('a').mouseover(function () {
-
+				
 			})
 
 			/* ajouter "Chapitre 1 :" devant le 1er titre h2<br>et "Chapitre 2 :" devant le 2ème titre h2 */
