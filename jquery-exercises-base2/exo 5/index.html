@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-2.2.4.js"></script>
+  <title>Exercice 5</title>
+</head>
+
+<body>
+  <form>
+    <label for="nom">Nom : </label>
+    <input type="text" name="nom" value="" id="nom" />
+    <label for="prenom">Prénom : </label>
+    <input type="text" name="prenom" value="" id="prenom" />
+    <button type="button" name="button">Envoyer</button>
+  </form>
+  <script>
+    //Quand un champ a le focus, définir sa bordure à "1px solid green". Quand le champ perd le focus, définir la bordure à "1px solid red"
+    $('input:text').focus(
+      function () {
+        $(this).css({
+          'border': '1px solid green'
+        });
+      });
+    $('input:text').blur(
+      function () {
+        $(this).css({
+          'border': '1px solid red'
+        });
+      });
+  </script>
+</body>
+
+</html>

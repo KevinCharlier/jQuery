@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-2.2.4.js"></script>
+  <title>Exercice 1</title>
+</head>
+
+<body>
+  <form>
+    <button type="button" name="button" id="clique-moi">Clique-moi !</button>
+  </form>
+  <script>
+    //Au clic sur le bouton, afficher une boite de dialogue avec le message de votre choix.
+    $('button').click(function () {
+      $('<h1>HELLO</h1>').appendTo($('body')); //     eai.appendTo(cible)insère un élément à la fin de la cible ;eai.prependTo(cible)insère un élément au début de la cible ;eai.insertBefore(cible)insère un élément avant la cible ;eai.insertAfter(cible)insère un élément après la cible.
+      $('body').append('tout le monde'); //    append()insère du contenu à la fin de la sélection ;prepend()insère du contenu au début de la sélection ;before()insère du contenu avant la sélection ;after()insère du contenu après la sélection.
+    });
+  </script>
+</body>
+
+</html>
