@@ -7,12 +7,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="jquery-2.2.4.js"></script>
     <title>Exo 4</title>
+    <style>
+        #rectangle {
+            margin-top: 20px;
+            width: 500px;
+            height: 50px;
+            border: 1px solid #000;
+        }
+    </style>
 </head>
 
 <body>
-    <button onclick="click()">CLICK ME</button>
+    <button id="un">1</button>
+    <button id="deux">2</button>
+    <button id="trois">3</button>
+    <button id="quatre">4</button>
+    <button id="cinq">5</button>
+    <div id="rectangle"></div>
 
     <script>
+        let rectangle = $('#rectangle')
+
+        $('#un').click(function () {
+            let rectHeight = rectangle.height();
+            rectHeight = rectHeight + 10;
+            rectangle.css('height', rectHeight)
+            if (rectHeight > 100) {
+                rectangle.css('height', 10);
+            }
+        })
+        $('#deux').click(function () {
+            rectangle.css('background-color', 'green')
+        })
+        $('#trois').click(function () {
+            rectangle.css('background-color', '')
+        })
+        $('#quatre').click(function () {
+            rectangle.hide();
+        })
+        $('#cinq').click(function () {
+            rectangle.show()
+        })
     </script>
 </body>
 
