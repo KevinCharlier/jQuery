@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-2.2.4.js"></script>
+    <title>Exo 2</title>
+</head>
+
+<body>
+    <button id="plus">+</button>
+    <button id="moins">-</button>
+    <p></p>
+
+    <script>
+        let click = 0
+        $('#plus').click(function () {
+            click++
+            $('p').html('Chiffre = '+click)
+        })
+        $('#moins').click(function () {
+            click--
+            $('p').html('Chiffre = '+click)
+        })
+    </script>
+</body>
+
+</html>
